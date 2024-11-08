@@ -43,6 +43,7 @@ model-viewer {
   position: relative;
   transition: opacity 0.3s;
   width: 30px;
+  display: block;
 
   &:focus {
     border: 4px solid #fff;
@@ -69,10 +70,29 @@ model-viewer {
   left: calc(100% + 1em);
   max-width: 300px;
   overflow-wrap: break-word;
-  padding: 0.5em 1em;
+  padding: 1em 1em;
   position: absolute;
   top: 50%;
   width: max-content;
+}
+
+.Hotspot-image {
+  width: 30px; /* Adjust width as needed */
+  height: auto;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.hotspot-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px; /* Adjusts spacing below the title */
+}
+
+.hotspot-text {
+  margin: 10px 0 0; 
+  font-weight: 600;
+  
 }
 
 .progress-bar {
