@@ -27,7 +27,7 @@
     }
   ];
 
-  // Populate info boxes
+  // Make info boxes
   function loadInfo() {
     infoBoxes.forEach((infoBox, index) => {
       const selected = document.querySelector(`.Hotspot[slot="hotspot-${index + 1}"]`);
