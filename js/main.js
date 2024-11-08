@@ -13,17 +13,17 @@
     {
       title: "SoundCore Speaker",
       text: "High-fidelity audio driver that delivers clear, immersive sound quality with deep bass and crisp highs, ensuring a premium listening experience.",
-      image: "images/hearing-aid.png"
+      image: "images/speaker.png"
     },
     {
       title: "TouchFlow Control",
       text: "Single tap to play or pause music, double-tap to skip tracks, and press and hold to activate your voice assistant.",
-      image: "images/built-microphone.png"
+      image: "images/touchpad.png"
     },
     {
       title: "VoiceBeam Mic",
       text: "A built-in microphone that captures your voice with clarity, reducing background noise for clear calls and voice commands.",
-      image: "images/lasting-battery.png"
+      image: "images/mic.png"
     }
   ];
 
@@ -34,17 +34,20 @@
       if (selected) {
         const imageBox = document.createElement("img");
         imageBox.src = infoBox.image;
-      
-
-        const titleBox = document.createElement("h2");
+        imageBox.classList.add("hotspot-image");
+        
+        const titleBox = document.createElement("h3");
         titleBox.textContent = infoBox.title;
         titleBox.classList.add("hotspot-title");
-
+  
         const textBox = document.createElement("p");
         textBox.textContent = infoBox.text;
         textBox.classList.add("hotspot-text");
-
-        selected.querySelector(".HotspotAnnotation").append(imageBox, titleBox, textBox);
+  
+        // Append title, image, and text to the annotation div
+        const annotationDiv = selected.querySelector(".HotspotAnnotation");
+        annotationDiv.innerHTML = ""; // Clear any existing content
+        annotationDiv.append(titleBox, imageBox, textBox);
       }
     });
   }
