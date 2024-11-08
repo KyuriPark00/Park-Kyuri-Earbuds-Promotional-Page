@@ -8,7 +8,7 @@
     {
       title: "QuickCharge Boost", 
       text: "Fast-charging technology that provides hours of playback with just a few minutes of charging, keeping you connected with minimal downtime.", 
-      image: "images/spatial-audio.png"
+      image: "images/charging.png"
     },
     {
       title: "SoundCore Speaker",
