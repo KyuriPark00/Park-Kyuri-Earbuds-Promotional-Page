@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vybe EarBuds</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/main.css" rel="stylesheet" />
+    <!-- link to greensock main library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  </head>
+  <body>
+
+    <h2 class="title">Vybe Earbuds</h2>
+
+    <model-viewer 
+      src="model/earbud.gltf" 
+      ar 
+      ar-modes="webxr scene-viewer quick-look" 
+      camera-controls tone-mapping="neutral" 
+      poster="images/poster.webp" shadow-intensity="1.81" 
+      exposure="1.09" 
+      camera-target="0.1392m 1.228m 0.85m">
+
+      <button class="Hotspot" slot="hotspot-1" data-position="0.10890093464276544m 0.10758493234064417m 1.310201166681387m" data-normal="0.08920370825947979m -0.5595222740522751m 0.8240009243150934m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">QuickCharge Boost</div>
+      </button>
+      
+      <button class="Hotspot" slot="hotspot-2" data-position="0.29486870923304054m 1.0318503504592407m 2.80593410812696m" data-normal="0.09357537476241848m -0.4940497627392386m 0.8643832952894075m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">SoundCore Speaker</div>
+      </button>
+      
+      <button class="Hotspot" slot="hotspot-3" data-position="0.08675231902244485m 1.4599314637154683m -0.6680581670671311m" data-normal="-0.10762796168334947m -1.0556727396543302e-7m -0.9941912400860694m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">TouchFlow Control</div>
+      </button>
+      
+      <button class="Hotspot" slot="hotspot-4" data-position="-0.14495641807851356m 2.6871891235511094m -0.2545456169258258m" data-normal="0.15539786714202927m -0.7718071625186115m 0.6165753861229608m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">VoiceBeam Mic</div>
+      </button>
+
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+
+      <div id="ar-prompt">
+          <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+      </div>
+    </model-viewer>
+    
+    <br><br>
+  
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
