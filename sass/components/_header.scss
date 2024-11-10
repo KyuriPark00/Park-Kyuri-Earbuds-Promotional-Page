@@ -1,0 +1,430 @@
+/*
+Couples Resort Responsive Build
+4 column grid as per XD file
+ */
+
+/*
+    CSS Guide
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero
+    4.  Industrial Night Details
+    5.  Fanshawe Industrial Video
+    4.  Winning Projects
+    7.  Testimonials
+    8.  Program introduction
+    9.  Portfolios
+    10. Footer
+    11. Mobile Library Grid Style
+    12. Tablet Library Grid Styles
+    13. Desktop Library Grid Styles
+ */
+
+/* 1. ---General Styles--- */
+
+  /* 1. ---Main Nav--- */
+  #sticky-nav-con {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: rgba(0,0,0,.5);
+  }
+
+  #main-nav button.expanded {
+    transform: rotate(90deg);
+  }
+  
+  #main-nav .toggle_button {
+    color: #fff;
+    margin-top: 10%;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    display: none;
+  }
+  
+  #mobile_dropdown_menu {
+    display: none;
+    position: absolute;
+    right: -300px;
+    top: 70px;
+    width: 300px;
+    height: 0px;
+    background-color: rgb(18, 18, 18);
+    overflow: hidden;
+    transition: right 0.5s ease;
+  }
+  
+  #mobile_dropdown_menu li {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  #mobile_dropdown_menu ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  #burger-con {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  /* Styling for the UL inside the lightbox */
+  #burger-con ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    padding: 0;
+    margin-left: 5%;
+  }
+
+  
+  #burger-con ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  #close-btn {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 0px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  /* Show lightbox when toggled */
+  #burger-con.show {
+    display: flex;
+  }
+  
+  #burger-con.show ul {
+    display: flex; /* Make sure UL is flex or block when lightbox is active */
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #main-nav ul li a:hover {
+    color: #c9261a;
+  }
+  
+  #main-nav ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin-top: -35px;
+    /* 이걸로 위아래 위치 조정 */
+  }
+  
+  #main-nav ul li a {
+    display: block;
+    margin-right: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #efefef;
+  }
+  
+  /* 5. ---Fanshawe Industrial Video--- */
+  :root {
+    /* psuedo class */
+    --plyr-color-main: #c9261a;
+    --plyr-control-icon-size: 20px;
+    --plyr-control-radius: 20px;
+    --plyr-font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    --plyr-control-spacing: 15px;
+  }
+
+  
+  /* ---Mobile Library Grid Style--- */
+  @media screen and (min-width: 480px) {
+
+    #logo {
+      position: relative;
+      max-width: 45px;
+    }
+  
+    #main-nav .toggle_button {
+      display: block; /* Show hamburger button */
+      color: #fff;
+    }
+  
+    #mobile_dropdown_menu {
+      display: none;
+      position: fixed;
+      right: -300px;
+      top: 70px;
+      width: 300px;
+      height: 100vh;
+      background-color: rgb(18, 18, 18);
+      z-index: 1000;
+      animation: slideIn 0.5s ease-in-out forwards;
+    }
+  
+    #mobile_dropdown_menu.show {
+      height: 100vh;
+      display: block;
+    }
+  
+    #mobile_dropdown_menu.hide {
+      animation: slideOut 0.5s ease-in-out forwards;
+    }
+  
+    @keyframes slideIn {
+      from {
+        transform: translateX(0);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(-100%);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes slideOut {
+      from {
+        transform: translateX(-100%);
+        opacity: 1;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 0;
+      }
+    }
+  
+    #burger-con {
+      top: 0px;
+      display: none; /* Hidden by default */
+    }
+  
+    #burger-con ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    #burger-con ul li {
+      margin: 20px 0;
+    }
+  
+    #burger-con.show {
+      display: flex; /* Display the lightbox when active */
+    }
+  
+    /* Hide the regular nav menu outside the lightbox on mobile */
+    #main-nav ul {
+      display: none;
+    }
+
+    // Model Viewer
+    model-viewer {
+      width: 80%;
+      max-width: 1000vh;
+      height: 100vh;
+      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,117,1) 54%);
+      margin: 0 auto;
+    }
+
+    #model-viewer {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .model-viewer-text {
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  /* ---Tablet Library Grid Styles--- */
+  @media screen and (min-width: 768px) {
+    #main-header {
+        height: 90px;
+      }
+    
+      #main-nav {
+        margin-top: 8%;
+        margin-left: 50%;
+      }
+    
+      #main-nav ul li a {
+        display: block;
+        margin-right: 2%;
+        font-size: 20px;
+        text-align: center;
+        color: #efefef;
+      }
+    
+   
+      #close-btn {
+        display: none; /* No close button on larger screens */
+      }
+    
+      #burger-con ul li {
+        margin-right: 8%;
+      }
+    
+      #burger-con ul li:last-child {
+        margin-right: 0;
+      }
+ 
+  
+    #main-nav .toggle_button {
+      display: none;
+    }
+    #mobile_dropdown_menu {
+      display: none;
+    }
+  
+    #burger-con {
+      display: flex; /* Display regular menu on larger screens */
+      background-color: transparent; /* No lightbox for larger screens */
+      position: relative;
+      width: auto;
+      height: auto;
+    }
+  
+    #close-btn {
+      display: none;
+    }
+  
+    #burger-con ul {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+  
+    #burger-con ul li,
+    #burger-con ul li:first-child {
+      border: none;
+      display: inline;
+    }
+
+    #logo {
+      order: -1;
+      position: relative;
+      max-width: 70px;
+      top: 10%;
+    }
+
+    // Model Viewer
+    model-viewer {
+      width: 80%;
+      max-width: 900vh;
+      height: 120vh;
+      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,117,1) 54%);
+      margin: 0 auto;
+    }
+
+    #model-viewer {
+      margin-top: 70px;
+      text-align: center;
+    }
+
+    .model-viewer-text {
+      h3 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  /* hero-main */
+  
+  /* ---Desktop Library Grid Styles--- */
+  @media screen and (min-width: 1200px) {
+    #main-header {
+      height: 90px;
+    }
+  
+    #main-nav {
+      margin-top: 5%;
+      margin-left: 400px;
+    }
+  
+    #main-nav ul li a {
+      display: block;
+      margin-right: 10px;
+      font-size: 22px;
+      text-align: center;
+      color: #efefef;
+    }
+  
+    #close-btn {
+      display: none; /* No close button on larger screens */
+    }
+  
+    #burger-con ul li {
+      margin-right: 50px;
+    }
+  
+    #burger-con ul li:last-child {
+      margin-right: -10px;
+    }
+
+      #logo {
+      order: -1;
+      position: relative;
+      max-width: 70px;
+      top: 10%;
+    }
+
+    // Model Viewer
+    model-viewer {
+      width: 80%;
+      max-width: 900vh;
+      height: 120vh;
+      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,117,1) 54%);
+      margin: 0 auto;
+    }
+  
+    #model-viewer {
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .model-viewer-text {
+      h3 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+
