@@ -1,0 +1,88 @@
+.xray-text {
+    text-align: center;
+  }
+  
+  #xray {
+    position: relative;
+    aspect-ratio: 14/8;
+    background-image: url(../images/xray.png);
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  #divisor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/withBackground.png);
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    border-radius: 15px 0 0 15px;
+  }
+  
+  // Slider Style
+  input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    top: -14px;
+    width: 100%;
+    background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    height: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  
+    &:hover {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  
+    // Firefox version
+    &::-moz-range-track {
+      height: 12px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+      border-radius: 6px;
+    }
+  
+    // WebKit Thumb Style
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      background: linear-gradient(135deg, #ff6a89, #ff4f6d);
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  
+      &:hover {
+        transform: scale(1.1);
+        background: linear-gradient(135deg, #ff8ca6, #ff6a89);
+      }
+    }
+  
+    // Firefox Thumb Style
+    &::-moz-range-thumb {
+      -moz-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      background: linear-gradient(135deg, #ff6a89, #ff4f6d);
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    &:focus {
+      &::-webkit-slider-thumb,
+      &::-moz-range-thumb {
+        background: linear-gradient(135deg, #ffd367, #ff8ca6);
+      }
+    }
+  }
+  

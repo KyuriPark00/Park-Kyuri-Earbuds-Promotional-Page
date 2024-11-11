@@ -1,29 +1,4 @@
-/*
-Couples Resort Responsive Build
-4 column grid as per XD file
- */
-
-/*
-    CSS Guide
-
-    1.  General Styles
-    2.  Main Nav
-    3.  Main Hero
-    4.  Industrial Night Details
-    5.  Fanshawe Industrial Video
-    4.  Winning Projects
-    7.  Testimonials
-    8.  Program introduction
-    9.  Portfolios
-    10. Footer
-    11. Mobile Library Grid Style
-    12. Tablet Library Grid Styles
-    13. Desktop Library Grid Styles
- */
-
-/* 1. ---General Styles--- */
-
-  /* 1. ---Main Nav--- */
+ /* 1. ---Main Nav--- */
   #sticky-nav-con {
     position: sticky;
     top: 0px;
@@ -261,6 +236,23 @@ Couples Resort Responsive Build
         margin-bottom: 20px;
       }
     }
+
+    // Xray
+    #xray-con {
+      margin-top: 40px;
+    }
+
+    .xray-text {
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
   }
   
   /* ---Tablet Library Grid Styles--- */
@@ -359,6 +351,23 @@ Couples Resort Responsive Build
         margin-bottom: 20px;
       }
     }
+
+    // Xray
+    #xray-con {
+      margin-top: 70px;
+    }
+
+    .xray-text {
+      h3 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
   }
   /* hero-main */
   
@@ -415,6 +424,23 @@ Couples Resort Responsive Build
     }
 
     .model-viewer-text {
+      h3 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+
+    // Xray
+    #xray-con {
+      margin-top: 80px;
+    }
+
+    .xray-text {
       h3 {
         font-size: 30px;
       }
