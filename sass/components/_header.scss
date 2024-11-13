@@ -120,7 +120,8 @@
     color: #efefef;
   }
   
-  /* 5. ---Fanshawe Industrial Video--- */
+  
+  /* Video--- */
   :root {
     /* psuedo class */
     --plyr-color-main: #c9261a;
@@ -136,7 +137,9 @@
 
     #logo {
       position: relative;
-      max-width: 45px;
+      max-width: 100px;
+      position: relative;
+      top: 6%;
     }
   
     #main-nav .toggle_button {
@@ -148,10 +151,10 @@
       display: none;
       position: fixed;
       right: -300px;
-      top: 70px;
-      width: 300px;
+      top: 9%;
+      width: 250px;
       height: 100vh;
-      background-color: rgb(18, 18, 18);
+      background-color: gray;
       z-index: 1000;
       animation: slideIn 0.5s ease-in-out forwards;
     }
@@ -257,10 +260,19 @@
   
   /* ---Tablet Library Grid Styles--- */
   @media screen and (min-width: 768px) {
+
     #main-header {
         height: 90px;
       }
     
+      #logo {
+        order: -1;
+        position: relative;
+        max-width: 190px;
+        top: 2%;
+
+      }
+  
       #main-nav {
         margin-top: 8%;
         margin-left: 50%;
@@ -319,13 +331,6 @@
       display: inline;
     }
 
-    #logo {
-      order: -1;
-      position: relative;
-      max-width: 70px;
-      top: 10%;
-    }
-
     // Model Viewer
     model-viewer {
       width: 80%;
@@ -376,6 +381,13 @@
     #main-header {
       height: 90px;
     }
+
+    #logo {
+      order: -1;
+      position: relative;
+      max-width: 190px;
+      top: 10%;
+    }
   
     #main-nav {
       margin-top: 5%;
@@ -402,12 +414,6 @@
       margin-right: -10px;
     }
 
-      #logo {
-      order: -1;
-      position: relative;
-      max-width: 70px;
-      top: 10%;
-    }
 
     // Model Viewer
     model-viewer {
