@@ -6,24 +6,6 @@ const toggleButton = document.querySelector(".toggle_button");
 const toggleButtonIcon = document.querySelector(".toggle_button i");
 const mobileMenu = document.querySelector("#mobile_dropdown_menu");
 
-
-//parallax
-const tl =gsap.timeline({
-  scrollTrigger: {
-    trigger: "#parallax-con",
-    start:"top top",
-    end:"bottom top",
-    scrub: true
-  }
-});
-
-gsap.utils.toArray(".parallax").forEach(layer => {
-	const depth = layer.dataset.depth;
-	const movement = -(layer.offsetHeight * depth)
-	tl.to(layer, {y: movement, ease: "none"}, 0)
-});
-
-
 toggleButton.addEventListener("click", () => {
   console.log("fired");
 
