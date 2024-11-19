@@ -1,9 +1,7 @@
  /* 1. ---Main Nav--- */
-  #sticky-nav-con {
-    position: sticky;
+  #nav-con {
     top: 0px;
-    z-index: 10;
-    background-color: rgba(0,0,0,.5);
+    background-color:  rgba(182,46,117,1);
   }
 
   #main-nav button.expanded {
@@ -11,7 +9,7 @@
   }
   
   #main-nav .toggle_button {
-    color: #fff;
+    color: #000;
     margin-top: 10%;
     font-size: 30px;
     cursor: pointer;
@@ -41,7 +39,7 @@
   }
   
   #mobile_dropdown_menu ul li a {
-    color: white;
+    color: #000;
     font-size: 20px;
     text-decoration: none;
     font-weight: 600;
@@ -73,7 +71,7 @@
 
   
   #burger-con ul li a {
-    color: white;
+    color: #000;
     text-decoration: none;
     font-weight: 600;
   }
@@ -85,7 +83,7 @@
     right: 20px;
     background: none;
     border: none;
-    color: white;
+    color: #000;
     font-size: 28px;
     cursor: pointer;
   }
@@ -101,7 +99,7 @@
   }
   
   #main-nav ul li a:hover {
-    color: #c9261a;
+    color: #fff;
   }
   
   #main-nav ul {
@@ -117,21 +115,9 @@
     margin-right: 10px;
     font-size: 25px;
     text-align: center;
-    color: #efefef;
+    color: #000;
   }
-  
-  
-  /* Video--- */
-  :root {
-    /* psuedo class */
-    --plyr-color-main: #c9261a;
-    --plyr-control-icon-size: 20px;
-    --plyr-control-radius: 20px;
-    --plyr-font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    --plyr-control-spacing: 15px;
-  }
-
-  
+    
   /* ---Mobile Library Grid Style--- */
   @media screen and (min-width: 480px) {
 
@@ -144,7 +130,7 @@
   
     #main-nav .toggle_button {
       display: block; /* Show hamburger button */
-      color: #fff;
+      color: #000;
     }
   
     #mobile_dropdown_menu {
@@ -154,7 +140,7 @@
       top: 9%;
       width: 250px;
       height: 100vh;
-      background-color: gray;
+      background-color: rgba(182,46,117,1);
       z-index: 1000;
       animation: slideIn 0.5s ease-in-out forwards;
     }
@@ -229,6 +215,9 @@
     }
 
     .model-viewer-text {
+
+      margin-bottom: 10px;
+
       h3 {
         font-size: 20px;
       }
@@ -246,6 +235,9 @@
     }
 
     .xray-text {
+
+      margin-bottom: 10px;
+
       h3 {
         font-size: 20px;
       }
@@ -283,7 +275,7 @@
         margin-right: 2%;
         font-size: 20px;
         text-align: center;
-        color: #efefef;
+        color: #000;
       }
     
    
@@ -397,9 +389,9 @@
     #main-nav ul li a {
       display: block;
       margin-right: 10px;
-      font-size: 22px;
+      font-size: 26px;
       text-align: center;
-      color: #efefef;
+      color: #000;
     }
   
     #close-btn {
@@ -425,11 +417,14 @@
     }
   
     #model-viewer {
-      margin-top: 80px;
+      margin-top: 110px;
       text-align: center;
     }
 
     .model-viewer-text {
+
+      margin-bottom: 20px;
+
       h3 {
         font-size: 30px;
       }
