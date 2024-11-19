@@ -1,7 +1,9 @@
  /* 1. ---Main Nav--- */
   #nav-con {
     top: 0px;
-    background-color:  rgba(182,46,117,1);
+    // background-color:  rgba(182,46,117,1);
+    background-color: #000;
+    border-bottom: 2px solid #efefef98;
   }
 
   #main-nav button.expanded {
@@ -9,7 +11,7 @@
   }
   
   #main-nav .toggle_button {
-    color: #000;
+    color: #fff;
     margin-top: 10%;
     font-size: 30px;
     cursor: pointer;
@@ -39,7 +41,7 @@
   }
   
   #mobile_dropdown_menu ul li a {
-    color: #000;
+    color: #fff;
     font-size: 20px;
     text-decoration: none;
     font-weight: 600;
@@ -71,7 +73,7 @@
 
   
   #burger-con ul li a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
   }
@@ -99,7 +101,7 @@
   }
   
   #main-nav ul li a:hover {
-    color: #fff;
+    color:  rgba(182,46,117,1);
   }
   
   #main-nav ul {
@@ -113,9 +115,8 @@
   #main-nav ul li a {
     display: block;
     margin-right: 10px;
-    font-size: 25px;
     text-align: center;
-    color: #000;
+    color: #fff;
   }
     
   /* ---Mobile Library Grid Style--- */
@@ -130,7 +131,7 @@
   
     #main-nav .toggle_button {
       display: block; /* Show hamburger button */
-      color: #000;
+      color: #fff;
     }
   
     #mobile_dropdown_menu {
@@ -205,7 +206,7 @@
       width: 80%;
       max-width: 1000vh;
       height: 100vh;
-      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,117,1) 54%);
+      // background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,117,1) 54%);
       margin: 0 auto;
     }
 
@@ -282,7 +283,7 @@
       #logo {
         order: -1;
         position: relative;
-        max-width: 190px;
+        max-width: 140px;
         top: 2%;
 
       }
@@ -297,7 +298,7 @@
         margin-right: 2%;
         font-size: 20px;
         text-align: center;
-        color: #000;
+        color: #fff;
       }
     
    
@@ -350,7 +351,7 @@
       width: 80%;
       max-width: 900vh;
       height: 120vh;
-      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,117,1) 54%);
+      // background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,117,1) 54%);
       margin: 0 auto;
     }
 
@@ -421,8 +422,8 @@
     #logo {
       order: -1;
       position: relative;
-      max-width: 190px;
-      top: 10%;
+      max-width: 150px;
+      top: 15%; 
     }
   
     #main-nav {
@@ -433,9 +434,9 @@
     #main-nav ul li a {
       display: block;
       margin-right: 10px;
-      font-size: 26px;
+      font-size: 24px;
       text-align: center;
-      color: #000;
+      color: #fff;
     }
   
     #close-btn {
@@ -456,7 +457,7 @@
       width: 80%;
       max-width: 900vh;
       height: 120vh;
-      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,117,1) 54%);
+      // background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(182,46,117,1) 54%);
       margin: 0 auto;
     }
   
