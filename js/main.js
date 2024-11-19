@@ -116,4 +116,62 @@ toggleButton.addEventListener("click", () => {
   slider.addEventListener("input", moveDivisor);
   // 콘솔에서 1부터 100까지 찍힘 cause html에서 그렇게 정의함
   
+  const canvas = document.querySelector("#explode-view");
+    const context = canvas.getContext("2d");
+
+    canvas.width = 1920;
+    canvas.height = 1080;
+
+    const frameCount = 100; // 총 프레임 수
+    const images = [];
+    let imagesLoaded = 0;
+
+    // 이미지 배열 생성 (animation0000.png부터 시작)
+    for (let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        img.src = `images/animation${i.toString().padStart(4, '0')}.png`; // 시작 프레임 변경
+
+        img.onload = () => {
+            imagesLoaded++;
+            if (imagesLoaded === frameCount) {
+                initAnimation();
+            }
+        };
+
+        img.onerror = () => {
+            console.error(`이미지 로드 실패: ${img.src}`);
+        };
+
+        images.push(img);
+    }
+
+    const buds = { frame: 0 };
+
+    function initAnimation() {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(buds, {
+            frame: frameCount - 1, // 마지막 프레임으로 이동
+            snap: "frame",
+            scrollTrigger: {
+                trigger: "#explode-view",
+                pin: true,
+                scrub: 1,
+                markers: true,
+                start: "top top"
+            },
+            onUpdate: render
+        });
+
+        render();
+    }
+
+    function render() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        const currentImage = images[Math.round(buds.frame)];
+        if (currentImage) {
+            context.drawImage(currentImage, 0, 0);
+        }
+    }
+  
 })();
