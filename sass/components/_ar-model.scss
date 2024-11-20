@@ -29,6 +29,59 @@ body {
   margin-bottom: 40px;
 }
 
+/* 애니메이션 키프레임 정의 */
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+/* #model-viewer-text 스타일 */
+#model-viewer-text {
+  h2 {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: textAppear 1s ease-out forwards, textWiggle 1s ease-in-out infinite 1s;
+  }
+
+  h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    animation: textAppear 1s ease-out forwards 0.5s;
+  }
+
+  p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    animation: textAppear 1s ease-out forwards 1s;
+  }
+}
+
+
 model-viewer {
   width: 80%;
   max-width: 1000vh;
