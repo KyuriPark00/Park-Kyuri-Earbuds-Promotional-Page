@@ -243,13 +243,9 @@ model-viewer > #ar-prompt > img {
 }
 
 #spec-details {
-  display: flex;
-  background-color: #DADCE0;
-  justify-content: center;
-  column-gap: 50px;
   
-  div {
-    background-color: blue;
+  div { 
+    border: 4px solid rgba(255, 0, 150, 1);
     
   }
 }

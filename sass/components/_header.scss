@@ -3,7 +3,7 @@
     top: 0px;
     // background-color:  rgba(182,46,117,1);
     background-color: #000;
-    border-bottom: 2px solid #efefef98;
+    // border-bottom: 2px solid #efefef98;
   }
 
   #main-nav button.expanded {
@@ -484,6 +484,28 @@
         font-size: 20px;
         margin-top: 10px;
         margin-bottom: 20px;
+      }
+    }
+
+    #spec-details {
+      display: flex;
+      justify-content: center;
+      column-gap: 50px;
+      margin-right: 60px;
+      margin-left: 60px;
+      margin-top: 40px;
+      
+      div {
+        max-width: 300px;
+        padding: 10px 15px 25px 15px; //trbl
+
+        img {
+          max-width: 150px;
+        }
+
+        h2 {
+          margin-bottom: 20px;
+        }
       }
     }
 
