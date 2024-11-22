@@ -485,6 +485,54 @@
         margin-top: 10px;
         margin-bottom: 20px;
       }
+      
+      .buy-now {
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+        padding: 10px 15px;
+        font-size: 25px;
+        color: #000;
+        font-weight: 800;
+        background: transparent;
+        border: 3px solid transparent;
+        position: relative;
+        border-radius: 5px;  // Optional: Add rounded corners
+      
+        &:hover {
+          cursor: pointer;
+          animation: pulse 1s ease-in-out infinite;  // Apply pulse animation on hover
+        }
+      
+        &::before {
+          content: '';
+          position: absolute;
+          top: -3px;
+          left: -3px;
+          right: -3px;
+          bottom: -3px;
+          background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+          z-index: -1;
+          border-radius: 5px;
+        }
+      }
+      
+      // Pulse animation keyframes
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.1);  // Slightly enlarge the button
+          opacity: 0.8;  // Slightly reduce opacity
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      
     }
 
     #spec-details {
@@ -496,7 +544,7 @@
       margin-top: 40px;
       
       div {
-        max-width: 300px;
+        max-width: 250px;
         padding: 10px 15px 25px 15px; //trbl
 
         img {
@@ -505,6 +553,11 @@
 
         h2 {
           margin-bottom: 20px;
+          font-size: 20px;
+        }
+
+        p{
+          font-size: 15px;
         }
       }
     }
@@ -520,6 +573,10 @@
 
       h3 {
         font-size: 30px;
+        font-weight: 900;
+        background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       p {

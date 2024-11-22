@@ -79,6 +79,7 @@ body {
     opacity: 0;
     animation: textAppear 1s ease-out forwards 1s;
   }
+
 }
 
 
@@ -243,10 +244,13 @@ model-viewer > #ar-prompt > img {
 }
 
 #spec-details {
-  
-  div { 
-    border: 4px solid rgba(255, 0, 150, 1);
-    
+  div {
+    h2 {
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
   }
 }
 
