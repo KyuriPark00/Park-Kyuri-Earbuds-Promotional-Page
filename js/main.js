@@ -262,5 +262,18 @@ function render() {
     }
 }
 
+// color-con
+document.addEventListener("DOMContentLoaded", function() {
+  const earbuds = document.getElementById("ear-buds");
+  const buttons = document.getElementById("color-con").getElementsByTagName("button");
+
+  //Array.from(buttons) converts the HTMLCollection into an array to use forEach.
+  Array.from(buttons).forEach(button => {
+      button.addEventListener("click", function(e) {
+          console.log(e.currentTarget.id);
+          earbuds.src = `images/${e.currentTarget.id}.jpg`;
+      });
+  });
+});
   
 })();
