@@ -343,6 +343,31 @@
         margin-bottom: 20px;
       }
     }
+    #color-con {
+
+      text-align: center;
+  
+      button {
+      width: 15px;
+      height: 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 10px 5px 10px 5px;
+    }
+  }
+  
+    #color {
+      #buds-con {
+        h2 {
+            font-size: 25px;
+            background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+      }
+    }
+    
   }
   
   /* ---Tablet Library Grid Styles--- */
@@ -560,7 +585,34 @@
         margin-bottom: 20px;
       }
     }
+
+    #color-con {
+
+      text-align: center;
+  
+      button {
+      width: 30px;
+      height: 0px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 10px 5px 10px 5px;
+    }
   }
+  
+    #color {
+      #buds-con {
+        h2 {
+            font-size: 25px;
+            background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+      }
+    }
+    
+
+}
   /* hero-main */
   
   /* ---Desktop Library Grid Styles--- */
@@ -754,6 +806,65 @@
         margin-top: 10px;
         margin-bottom: 20px;
       }
+    }
+
+    #color-con {
+
+      text-align: center;
+  
+      button {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 20px 5px 20px 5px;
+    }
+  }
+  
+    #color {
+
+      padding-bottom: 60px;
+      #buds-con {
+        h2 {
+            font-size: 30px;
+            background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+      }
+    }
+  }
+
+  // move button
+  #scroll-to-top {
+    position: fixed;
+    bottom: 2rem; // 화면 아래에서 2rem 위로
+    right: 2rem; // 화면 오른쪽에서 2rem 왼쪽으로
+    width: 3rem;
+    height: 3rem;
+    color: #ffffff; // 아이콘 색상
+    border: 4px solid rgba(255, 0, 150, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;;
+    border-radius: 50%; // 둥근 버튼
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none; // 기본적으로 숨김
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000; // 최상위 레이어에 배치
+  
+    i {
+      font-size: 1.5rem; // 아이콘 크기
+    }
+  
+    &:hover {
+      border: 4px solid rgba(0, 204, 255, 1);
+    }
+  
+    &:active {
+      transform: scale(0.95); // 클릭 시 약간 축소
     }
   }
   

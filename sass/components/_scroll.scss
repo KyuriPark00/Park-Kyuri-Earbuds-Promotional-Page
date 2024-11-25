@@ -5,3 +5,15 @@
     background-color: white;
   }
   
+#scroll-con {
+  h3 {
+    background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
