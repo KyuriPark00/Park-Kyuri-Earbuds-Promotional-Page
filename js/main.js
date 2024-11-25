@@ -275,5 +275,22 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+
+// Scroll-to-Top Button Logic
+const scrollToTopButton = document.getElementById('scroll-to-top');
+
+// Show button when user scrolls down
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    scrollToTopButton.style.display = 'flex'; // 버튼 표시
+  } else {
+    scrollToTopButton.style.display = 'none'; // 버튼 숨김
+  }
+});
+
+// Scroll to top when button is clicked
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
   
 })();
