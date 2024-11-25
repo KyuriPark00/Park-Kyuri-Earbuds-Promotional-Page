@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function() {
   Array.from(buttons).forEach(button => {
       button.addEventListener("click", function(e) {
           console.log(e.currentTarget.id);
-          earbuds.src = `images/${e.currentTarget.id}.jpg`;
+          earbuds.src = `images/${e.currentTarget.id}.png`;
       });
   });
 });
