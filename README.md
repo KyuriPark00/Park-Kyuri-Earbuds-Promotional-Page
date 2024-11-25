@@ -7,7 +7,23 @@ https://github.com/your-username/vybe-earbuds-viewer.git
 
 
 # Features
-- 3D Model Integration: The website includes embedded .gltf and .usd files, allowing users to view the Vybe Pro Max in 3D.
+- 🎥 3D Model Integration
+Embedded .gltf models provide an immersive 3D viewing experience.
+Real-time controls for rotating, zooming, and interacting with the model.
+
+- 📍 Interactive Hotspots
+Hotspots highlight key features of the earbuds:
+QuickCharge Boost: Fast charging for minimal downtime.
+SoundCore Speaker: High-fidelity sound with deep bass and crisp highs.
+TouchFlow Control: Gesture-based controls for music playback and calls.
+VoiceBeam Mic: Noise-reducing microphone for clear voice communication.
+
+- 🎨 Customization Options
+Select your preferred color (Blue, Black, White, or Pink) to visualize the earbuds in different styles.
+
+- 🔍 X-Ray and Exploded View Modes
+Use sliders and interactive canvases to discover the inner workings of the earbuds.
+View layered designs and understand their premium engineering.
 
 - Interactive Hotspots: Information hotspots highlight key features like QuickCharge, SoundCore, TouchFlow, and VoiceBeam, providing users with details about the earbuds’ functionalities.
 
